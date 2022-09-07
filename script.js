@@ -1,12 +1,18 @@
 const container = document.querySelector('.container.grid');
 
-createGrid();
+container.append(...createGrid());
+
+container.addEventListener('mouseover', (event) => {
+  // change background color of grid
+  // squares when curose moves onto it
+  event.target.style.backgroundColor = '#00203FFF';
+});
 
 
 
 
-// create div elements that will fit 
-// a 16x16 grid container
+// create grid items
+// for grid container
 function createGrid() {
   // create array of divs
   const divs = [];
@@ -23,5 +29,5 @@ function createGrid() {
     divs.push(div);
   }
 
-  container.append(...divs);
+  return divs;
 }
