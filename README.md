@@ -1,5 +1,4 @@
 # Etch-A-Sketch
----
 ### Overview
 A Javascript project that is a "browser version of something between a sketchpad and an Etch-A-Sketch". This is one of the projects in foundation learning path on The Odin Project.
 
