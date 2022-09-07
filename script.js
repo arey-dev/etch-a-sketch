@@ -1,17 +1,17 @@
 const button = document.querySelector('.button');
-
 const container = document.querySelector('.container.grid');
 
+// generate default grid
 container.append(...createGrid());
 
 container.addEventListener('mouseover', (event) => {
-  // change background color of grid
-  // squares when curose moves onto it
+  // change background color of
+  // grid items when cursor moves onto it
   event.target.style.backgroundColor = '#00203FFF';
 });
 
 // generate grid when button is clicked
-button.onclick = createNewGrid;
+button.addEventListener('click', createNewGrid);
 
 // handler for button's click event that
 // generates a new grid based on user input
